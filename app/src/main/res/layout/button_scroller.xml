@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <!--    Announcement Button     -->
+        <RelativeLayout
+            android:id="@+id/announcementButtonLayout"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/announcementButton"
+                android:layout_width="175dp"
+                android:layout_height="240dp"
+                android:foreground="@drawable/rounded_shape"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fjr_announcements" />
+
+            <TextView
+                android:id="@+id/announcementTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/announcementButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/announcementString"
+                android:textSize="20sp" />
+            <!--android:textStyle="bold"-->
+        </RelativeLayout>
+
+        <!--    Anonymous Alerts Button     -->
+        <RelativeLayout
+            android:id="@+id/anonymousAlertsButtonLayout"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/anonymousAlertsButton"
+                android:layout_width="175dp"
+                android:layout_height="240dp"
+                android:foreground="@drawable/rounded_shape"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fjr_anonymous_alerts" />
+
+            <TextView
+                android:id="@+id/anonymousAlertsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/anonymousAlertsButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"
+                android:fontFamily="sans-serif"
+                android:text="Anonymous Alerts"
+                android:textSize="19.5sp" />
+            <!--android:textStyle="bold"-->
+        </RelativeLayout>
+
+
+        <!--    Schedule Button     -->
+        <RelativeLayout
+            android:id="@+id/scheduleButtonLayout"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/scheduleButton"
+                android:layout_width="175dp"
+                android:layout_height="240dp"
+                android:foreground="@drawable/rounded_shape"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fjr_schedule" />
+
+            <TextView
+                android:id="@+id/scheduleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/scheduleButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"
+                android:fontFamily="sans-serif"
+                android:text="Schedule"
+                android:textSize="20sp" />
+            <!--android:textStyle="bold"-->
+        </RelativeLayout>
+
+        <!--    Bus Times Button     -->
+        <RelativeLayout
+            android:id="@+id/scheduleButtonLayout"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/busTimesButton"
+                android:layout_width="175dp"
+                android:layout_height="240dp"
+                android:foreground="@drawable/rounded_shape"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fjr_bus_times" />
+
+            <TextView
+                android:id="@+id/busTimesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/busTimesButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"
+                android:fontFamily="sans-serif"
+                android:text="Bus Times"
+                android:textSize="20sp" />
+            <!--android:textStyle="bold"-->
+        </RelativeLayout>
+
+        <!--    Contact Button     -->
+        <RelativeLayout
+            android:id="@+id/contactButtonLayout"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/contactButton"
+                android:layout_width="175dp"
+                android:layout_height="240dp"
+                android:foreground="@drawable/rounded_shape"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fjr_contact" />
+
+            <TextView
+                android:id="@+id/contactTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/contactButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"
+                android:fontFamily="sans-serif"
+                android:text="Contact"
+                android:textSize="20sp" />
+            <!--android:textStyle="bold"-->
+        </RelativeLayout>
+
+        <!--    Map Button     -->
+        <RelativeLayout
+            android:id="@+id/mapButtonLayout"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/mapButton"
+                android:layout_width="175dp"
+                android:layout_height="240dp"
+                android:foreground="@drawable/rounded_shape"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fjr_map" />
+
+            <TextView
+                android:id="@+id/mapTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/mapButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"
+                android:fontFamily="sans-serif"
+                android:text="Map"
+                android:textSize="20sp" />
+            <!--android:textStyle="bold"-->
+        </RelativeLayout>
+
+        <!--    MyBlueprint Button     -->
+        <RelativeLayout
+            android:id="@+id/myBlueprintButtonLayout"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/myBlueprintButton"
+                android:layout_width="175dp"
+                android:layout_height="240dp"
+                android:foreground="@drawable/rounded_shape"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fjr_myblueprint" />
+
+            <TextView
+                android:id="@+id/myBlueprintTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/myBlueprintButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"
+                android:fontFamily="sans-serif"
+                android:text="MyBlueprint"
+                android:textSize="20sp" />
+            <!--android:textStyle="bold"-->
+        </RelativeLayout>
+
+        <!--    Twitter Button     -->
+        <RelativeLayout
+            android:id="@+id/twitterButtonLayout"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/twitterButton"
+                android:layout_width="175dp"
+                android:layout_height="240dp"
+                android:foreground="@drawable/rounded_shape"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fjr_twitter" />
+
+            <TextView
+                android:id="@+id/twitterTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/twitterButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"
+                android:fontFamily="sans-serif"
+                android:text="Twitter"
+                android:textSize="20sp" />
+            <!--android:textStyle="bold"-->
+        </RelativeLayout>
+
+        <!--    Website Button     -->
+        <RelativeLayout
+            android:id="@+id/websiteButtonLayout"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/websiteButton"
+                android:layout_width="175dp"
+                android:layout_height="240dp"
+                android:foreground="@drawable/rounded_shape"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fjr_website" />
+
+            <TextView
+                android:id="@+id/websiteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/websiteButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"
+                android:fontFamily="sans-serif"
+                android:text="Website"
+                android:textSize="20sp" />
+            <!--android:textStyle="bold"-->
+        </RelativeLayout>
+    </GridLayout>
+</ScrollView>
