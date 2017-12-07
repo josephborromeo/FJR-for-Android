@@ -12,7 +12,8 @@
         android:columnCount="2"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:paddingTop="20dp">
+        android:paddingTop="20dp"
+        android:layout_marginBottom="5dp">
 
         <!--    Announcement Button     -->
         <RelativeLayout
@@ -110,7 +111,7 @@
 
         <!--    Bus Times Button     -->
         <RelativeLayout
-            android:id="@+id/scheduleButtonLayout"
+            android:id="@+id/busTimesButtonLayout"
             android:layout_column="1"
             android:layout_row="1"
             android:layout_marginBottom="25dp"
@@ -217,7 +218,8 @@
                 android:foreground="@drawable/rounded_shape"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/fjr_myblueprint" />
+                android:src="@drawable/fjr_myblueprint"/>
+
 
             <TextView
                 android:id="@+id/myBlueprintTextView"
@@ -248,7 +250,7 @@
                 android:foreground="@drawable/rounded_shape"
                 android:padding="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/fjr_twitter" />
+                android:src="@drawable/fjr_twitter"/>
 
             <TextView
                 android:id="@+id/twitterTextView"
